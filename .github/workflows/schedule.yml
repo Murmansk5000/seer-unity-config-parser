@@ -7,6 +7,9 @@ on:
     - cron: '0 6 * * 5'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 concurrency:
   group: weekly-start
   cancel-in-progress: false
